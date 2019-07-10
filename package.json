@@ -1,0 +1,21 @@
+{
+  "name": "my-typescript-node-template",
+  "version": "0.0.1",
+  "description": "My TypeScript(Node) Template",
+  "main": "dist/index.js",
+  "repository": "https://github.com/InkoHX/<Repository>.git",
+  "author": "InkoHX <inkohx@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "lint:fix": "-c tslint.json 'src/**/*.ts' --fix",
+    "compile": "tsc -p .",
+    "watch": "tsc -w -p ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^12.6.2",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  }
+}

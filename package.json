@@ -14,7 +14,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "^12.7.3",
+    "@types/node": "^12.7.5",
     "tslint": "^5.18.0",
     "typescript": "^3.6.2"
   }

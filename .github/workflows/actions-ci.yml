@@ -18,19 +18,16 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-        registry-url: 'https://npm.pkg.github.com/'
-        scope: '@inkohx'
     - name: Restore cache.
       uses: actions/cache@v1
       with:
         path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        key: ${{ runner.os }}-node-npm-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
-          ${{ runner.os }}-node-
+          ${{ runner.os }}-node-npm-
     - name: npm install and lint
       run: |
         npm ci
         npm run lint
       env:
         CI: true
-        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

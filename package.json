@@ -1,11 +1,27 @@
 {
-  "name": "my-typescript-node-template",
+  "name": "typescript-template",
   "version": "0.0.1",
   "description": "My TypeScript(Node) Template",
   "main": "dist/index.js",
-  "repository": "https://github.com/InkoHX/<Repository>.git",
-  "author": "InkoHX <inkohx@gmail.com>",
   "license": "MIT",
+  "homepage": "",
+  "author": {
+    "name": "InkoHX",
+    "email": "inkohx@gmail.com",
+    "url": "https://about.inkohx.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/InkoHX/***.git"
+  },
+  "bugs": {
+    "url": "https://github.com/InkoHX/***/issues"
+  },
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/inkohx"
+  },
+  "keywords": [],
   "scripts": {
     "lint": "eslint --ext .ts --ignore-path .gitignore ./src",
     "lint:fix": "eslint --ext .ts --ignore-path .gitignore ./src --fix",
